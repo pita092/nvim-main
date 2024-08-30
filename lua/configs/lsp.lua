@@ -1,1 +1,0 @@
-require("pitavim.configs.lsp")
