@@ -27,3 +27,4 @@ require("pitavim.options")
 vim.schedule(function()
   require("pitavim.maps")
 end)
+
