@@ -10,7 +10,7 @@ end
 
 vim.opt.rtp:prepend(lazypath)
 
-local lazy_config = require("configs.lazy")
+local lazy_stuff = require("configs.lazy")
 
 -- load plugins
 ---@diagnostic disable-next-line: different-requires
@@ -21,9 +21,7 @@ require("lazy").setup({
     branch = "main",
     import = "pitavim.plugins",
   },
-}, lazy_config)
-
-require("pitavim.configs.lsp")
+}, lazy_stuff)
 require("pitavim.scripts")
 require("pitavim.options")
 vim.schedule(function()
