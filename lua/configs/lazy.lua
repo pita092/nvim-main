@@ -18,7 +18,7 @@ return {
 				"getscript",
 				"getscriptPlugin",
 				"gzip",
-				"logipat",
+			  "logipat",
 				"netrw",
 				"netrwPlugin",
 				"netrwSettings",
