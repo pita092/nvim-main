@@ -34,8 +34,9 @@
 --
 --
 
-vim.g.base46_cache = vim.fn.stdpath('data').. '/base46_cache/'
-
+vim.g.base46_cache = vim.fn.stdpath('data') .. '/base46_cache/'
+local base46_config = require("base46")
+require("base46").setup(base46_config)
 
 vim.g.mapleader = " "
 
