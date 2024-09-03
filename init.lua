@@ -58,6 +58,7 @@ require("lazy").setup({
     import = "pitavim.plugins",
   },
 }, lazy_stuff)
+require("pitavim.cmds")
 require("pitavim.scripts")
 require("pitavim.options")
 vim.schedule(function()
