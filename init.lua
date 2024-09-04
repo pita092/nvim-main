@@ -52,7 +52,7 @@ local lazy_stuff = require("configs.lazy")
 ---@diagnostic disable-next-line: different-requires
 require("lazy").setup({
   {
-    "pita092/PitaVim",
+    "pita092/nvim-plugins",
     lazy = false,
     branch = "main",
     import = "pitavim.plugins",
