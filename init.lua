@@ -33,16 +33,8 @@
 -- ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠙⠛⠒⠦⠤⠤⠤⠶⠒⠒⠛⠛⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 --
 --
+vim.g.base46_cache = vim.fn.stdpath "data" .. "/nvchad/base46/"
 
-vim.g.base46_cache = vim.fn.stdpath("data") .. "/nvchad/base46/"
-local base46 = require("base46")
-
--- Set up the cache
-base46.setup({
-  custom_highlights = {}, -- Add any custom highlights here
-  theme = "gruvbox",     -- Set your preferred theme
-  transparency = false,  -- Set to true if you want transparency
-})
 
 vim.g.mapleader = " "
 
@@ -76,4 +68,3 @@ vim.schedule(function()
   require("pitavim.maps")
 end)
 require("pitavim.highlights")
-base46.load_all_highlights()
