@@ -34,14 +34,24 @@
 --
 --
 
+vim.g.base46_cache = vim.fn.stdpath("data") .. "/nvchad/base46/"
+local base46 = require("base46")
+
+-- Set up the cache
+base46.setup({
+  custom_highlights = {}, -- Add any custom highlights here
+  theme = "gruvbox",     -- Set your preferred theme
+  transparency = false,  -- Set to true if you want transparency
+})
+
 vim.g.mapleader = " "
 
 -- bootstrap lazy and all plugins
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 
 if not vim.uv.fs_stat(lazypath) then
-	local repo = "https://github.com/folke/lazy.nvim.git"
-	vim.fn.system({ "git", "clone", "--filter=blob:none", repo, "--branch=stable", lazypath })
+  local repo = "https://github.com/folke/lazy.nvim.git"
+  vim.fn.system({ "git", "clone", "--filter=blob:none", repo, "--branch=stable", lazypath })
 end
 
 vim.opt.rtp:prepend(lazypath)
@@ -51,18 +61,19 @@ local lazy_stuff = require("configs.lazy")
 -- load plugins
 ---@diagnostic disable-next-line: different-requires
 require("lazy").setup({
-	{
-		"pita092/nvim-plugins",
-		lazy = false,
-		branch = "main",
-		import = "pitavim.plugins",
-	},
+  {
+    "pita092/nvim-plugins",
+    lazy = false,
+    branch = "main",
+    import = "pitavim.plugins",
+  },
 }, lazy_stuff)
 
 require("pitavim.cmds")
 require("pitavim.scripts")
 require("pitavim.options")
 vim.schedule(function()
-	require("pitavim.maps")
+  require("pitavim.maps")
 end)
 require("pitavim.highlights")
+base46.load_all_highlights()
