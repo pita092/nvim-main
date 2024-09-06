@@ -59,10 +59,6 @@ require("lazy").setup({
 	},
 }, lazy_stuff)
 
-vim.cmd([[
-  highlight SignColumn guibg=NONE ctermbg=NONE
-]])
-
 require("pitavim.highlights")
 require("pitavim.cmds")
 require("pitavim.scripts")
