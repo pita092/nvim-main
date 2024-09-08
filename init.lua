@@ -58,12 +58,7 @@ require("lazy").setup({
     import = "pitavim.plugins",
   },
 }, lazy_stuff)
-vim.cmd([[
-  highlight DiagnosticSignError guibg=NONE
-  highlight DiagnosticSignWarn guibg=NONE
-  highlight DiagnosticSignInfo guibg=NONE
-  highlight DiagnosticSignHint guibg=NONE
-]])
+
 
 require("pitavim.highlights")
 require("pitavim.cmds")
