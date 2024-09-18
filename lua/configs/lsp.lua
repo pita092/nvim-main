@@ -22,6 +22,7 @@ lspconfig.gopls.setup({
 	capabilities = capabilities,
 	settings = {
 		gopls = {
+			capabilities = capabilities,
 			completeUnimported = true,
 			usePlaceholders = true,
 			analyses = {
