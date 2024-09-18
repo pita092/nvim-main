@@ -19,7 +19,6 @@ lspconfig.lua_ls.setup({
 })
 lspconfig.gopls.setup({
 	filetypes = { "go", "gomod" },
-	capabilities = capabilities,
 	settings = {
 		gopls = {
 			capabilities = capabilities,
