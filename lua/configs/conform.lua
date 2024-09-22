@@ -4,5 +4,6 @@ require("conform").setup({
 		c = { "clang_format" },
 		cpp = { "clang_format" },
 		go = { "gofumpt", "goimports_reviser", "golines" },
+		java = { "clang_format" },
 	},
 })

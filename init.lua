@@ -59,7 +59,6 @@ require("lazy").setup({
 	},
 }, lazy_stuff)
 
-require("pitavim.highlights")
 require("configs")
 require("pitavim.cmds")
 require("pitavim.scripts")

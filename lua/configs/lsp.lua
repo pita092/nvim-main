@@ -21,7 +21,6 @@ lspconfig.gopls.setup({
 	filetypes = { "go", "gomod" },
 	settings = {
 		gopls = {
-			capabilities = capabilities,
 			completeUnimported = true,
 			usePlaceholders = true,
 			analyses = {
