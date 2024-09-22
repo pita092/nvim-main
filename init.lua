@@ -62,7 +62,6 @@ require("lazy").setup({
 require("configs")
 require("pitavim.cmds")
 require("pitavim.scripts")
-require("pitavim.options")
 vim.schedule(function()
 	require("pitavim.maps")
 end)
