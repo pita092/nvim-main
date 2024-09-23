@@ -1,5 +1,6 @@
 local M = {}
 M.base46 = {
+	lsp = { signature = false },
 	integrations = {
 		"blankline",
 		"cmp",
@@ -9,7 +10,6 @@ M.base46 = {
 	},
 }
 M.ui = {
-	lsp = { signature = false },
 	hl_override = {
 		IlluminatedWordText = {
 			bg = "NONE",
