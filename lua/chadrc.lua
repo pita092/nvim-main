@@ -4,10 +4,12 @@ M.base46 = {
 		"blankline",
 		"cmp",
 		"git",
+    "telescope",
 		-- more
 	},
 }
 M.ui = {
+	theme = "gruvbox",
 	telescope = {
 		enabled = false,
 	}, -- borderless / bordered
