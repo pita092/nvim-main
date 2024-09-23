@@ -12,5 +12,11 @@ M.statusline = {
 	order = nil,
 	modules = nil,
 }
+tabufline = {
+	enabled = true,
+	lazyload = true,
+	order = { "treeOffset", "buffers", "tabs" },
+	modules = nil,
+}
 
 return M
