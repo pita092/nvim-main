@@ -9,6 +9,7 @@ M.base46 = {
 	},
 }
 M.ui = {
+	lsp = { signature = false },
 	hl_override = {
 		IlluminatedWordText = {
 			bg = "NONE",
@@ -38,10 +39,6 @@ M.ui = {
 		separator_style = "default",
 		order = nil,
 		modules = nil,
-	},
-	cheatsheet = {
-		theme = "simple", -- simple/grid
-		excluded_groups = { "terminal (t)", "autopairs", "Nvim", "Opens" }, -- can add group name or with mode
 	},
 }
 
