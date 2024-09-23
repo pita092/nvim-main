@@ -1,8 +1,5 @@
 local M = {}
 M.base46 = {
-	hl_override = {
-		LspReferenceWrite = { bg = "NONE" },
-	},
 	integrations = {
 		"blankline",
 		"cmp",
@@ -12,6 +9,9 @@ M.base46 = {
 	},
 }
 M.ui = {
+	hl_override = {
+		LspReferenceWrite = { bg = "NONE" },
+	},
 	theme = "flexoki",
 	telescope = {
 		enabled = false,
