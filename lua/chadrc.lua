@@ -1,10 +1,13 @@
 local M = {}
 M.base46 = {
+	hl_override = {
+		LspReferenceWrite = { bg = "NONE" },
+	},
 	integrations = {
 		"blankline",
 		"cmp",
 		"git",
-    "telescope",
+		"telescope",
 		-- more
 	},
 }
@@ -25,7 +28,7 @@ M.ui = {
 		order = nil,
 		modules = nil,
 	},
-  	cheatsheet = {
+	cheatsheet = {
 		theme = "simple", -- simple/grid
 		excluded_groups = { "terminal (t)", "autopairs", "Nvim", "Opens" }, -- can add group name or with mode
 	},

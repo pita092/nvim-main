@@ -58,27 +58,6 @@ require("lazy").setup({
 		import = "pitavim.plugins",
 	},
 }, lazy_stuff)
-vim.api.nvim_create_autocmd("LspAttach", {
-	callback = function(args)
-		local client = vim.lsp.get_client_by_id(args.data.client_id)
-		client.server_capabilities.semanticTokensProvider = nil
-	end,
-})
-
-vim.api.nvim_create_autocmd("ColorScheme", {
-	callback = function()
-		for _, group in ipairs(vim.fn.getcompletion("@lsp", "highlight")) do
-			vim.api.nvim_set_hl(0, group, {})
-		end
-	end,
-})
-
-vim.api.nvim_create_autocmd("BufEnter", {
-	callback = function()
-		vim.cmd("highlight clear")
-		vim.cmd("syntax reset")
-	end,
-})
 
 require("configs")
 require("pitavim.cmds")
