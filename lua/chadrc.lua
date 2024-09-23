@@ -9,7 +9,7 @@ M.base46 = {
 	},
 }
 M.ui = {
-	theme = "kanagawa",
+	theme = "gruvbox",
 	telescope = {
 		enabled = false,
 	}, -- borderless / bordered
