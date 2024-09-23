@@ -8,8 +8,9 @@ M.base46 = {
 	},
 }
 M.ui = {
-	theme = "gruvbox",
-	telescope = { style = "borderless" }, -- borderless / bordered
+	telescope = {
+		enabled = false,
+	}, -- borderless / bordered
 	lsp = { signature = true },
 	mason = { cmd = true, pkgs = {} },
 	tabufline = {
