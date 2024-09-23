@@ -74,7 +74,6 @@ local options = {
 			border = "single",
 		},
 	},
-
 	lsp = { signature = true },
 
 	cheatsheet = {
