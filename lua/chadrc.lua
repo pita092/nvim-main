@@ -23,6 +23,11 @@ M.base46 = {
 }
 M.ui = {
 	hl_override = {
+		LspReferenceWrite = {
+			bg = "NONE",
+			fg = "#fabd3b",
+			underline = false,
+		},
 		LspReferenceText = {
 			bg = "NONE",
 			fg = "#fabd3b",
