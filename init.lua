@@ -65,6 +65,21 @@ vim.api.nvim_create_autocmd("LspAttach", {
 	end,
 })
 
+vim.api.nvim_create_autocmd("ColorScheme", {
+	callback = function()
+		for _, group in ipairs(vim.fn.getcompletion("@lsp", "highlight")) do
+			vim.api.nvim_set_hl(0, group, {})
+		end
+	end,
+})
+
+vim.api.nvim_create_autocmd("BufEnter", {
+	callback = function()
+		vim.cmd("highlight clear")
+		vim.cmd("syntax reset")
+	end,
+})
+
 require("configs")
 require("pitavim.cmds")
 require("pitavim.scripts")
