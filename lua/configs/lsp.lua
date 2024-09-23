@@ -2,9 +2,11 @@ local lspconfig = require("lspconfig")
 local capabilities = require("cmp_nvim_lsp").default_capabilities()
 local on_attach = function(client, bufnr)
 	client.server_capabilities.semanticTokensProvider = nil
+	-- Add any other on_attach functionality you want here
 end
 
 lspconfig.jdtls.setup({
+	on_attach = on_attach, -- Add this line
 	capabilities = capabilities,
 	filetypes = { "kotlin", "java" },
 	settings = {
@@ -18,10 +20,8 @@ lspconfig.jdtls.setup({
 })
 
 lspconfig.lua_ls.setup({
+	on_attach = on_attach, -- Add this line
 	capabilities = capabilities,
-	on_attach = function(client)
-		client.server_capabilities.semanticTokensProvider = nil
-	end,
 })
 lspconfig.gopls.setup({
 	filetypes = { "go", "gomod" },
@@ -37,6 +37,7 @@ lspconfig.gopls.setup({
 	},
 })
 lspconfig.clangd.setup({
+	on_attach = on_attach, -- Add this line
 	keys = {
 		{ "<leader>ch", "<cmd>ClangdSwitchSourceHeader<cr>", desc = "Switch Source/Header (C/C++)" },
 	},
@@ -73,5 +74,6 @@ lspconfig.clangd.setup({
 	},
 })
 lspconfig.texlab.setup({
+	on_attach = on_attach, -- Add this line
 	capabilities = capabilities,
 })
