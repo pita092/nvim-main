@@ -67,5 +67,5 @@ vim.schedule(function()
 end)
 require("base46").load_all_highlights()
 vim.cmd([[ 
-highlight LspReferenceWrite guibg="#282828"
+highlight LspReferenceWrite guibg= "#282828"
 ]])
