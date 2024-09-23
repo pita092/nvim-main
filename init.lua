@@ -66,3 +66,6 @@ vim.schedule(function()
 	require("pitavim.maps")
 end)
 require("base46").load_all_highlights()
+vim.cmd([[ 
+highlight LspReferenceWrite guibg = "NONE"
+]])

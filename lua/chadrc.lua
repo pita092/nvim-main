@@ -9,10 +9,8 @@ M.base46 = {
 	},
 }
 M.ui = {
-	hl_override = {
-		LspReferenceWrite = { bg = "NONE" },
-	},
-	theme = "flexoki",
+
+	theme = "gruvbox",
 	telescope = {
 		enabled = false,
 	}, -- borderless / bordered
