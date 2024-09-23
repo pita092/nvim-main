@@ -1,8 +1,16 @@
 local lspconfig = require("lspconfig")
 local capabilities = require("cmp_nvim_lsp").default_capabilities()
 local on_attach = function(client, bufnr)
+	-- Disable semantic tokens
 	client.server_capabilities.semanticTokensProvider = nil
-	-- Add any other on_attach functionality you want here
+
+	-- Disable all semantic token highlights
+	for _, group in ipairs(vim.fn.getcompletion("@lsp", "highlight")) do
+		vim.api.nvim_set_hl(0, group, {})
+	end
+
+	-- Additional step: clear existing semantic tokens
+	vim.lsp.buf.clear_references()
 end
 
 lspconfig.jdtls.setup({
