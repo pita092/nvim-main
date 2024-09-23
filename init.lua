@@ -66,5 +66,5 @@ vim.schedule(function()
 	require("pitavim.maps")
 end)
 local colorscheme_config = require("pitavim.scripts.colorscheme")
+colorscheme_config.check_colorscheme_file()
 colorscheme_config.load_colorscheme()
-
