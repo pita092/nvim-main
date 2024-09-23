@@ -25,7 +25,7 @@ M.ui = {
 	hl_override = {
 		LspReferenceText = {
 			bg = "NONE",
-			fg = normal_fg,
+			fg = "#fabd3b",
 			underline = false,
 		},
 		LspReferenceRead = {
