@@ -19,7 +19,7 @@ vim.schedule(function()
 end)
 
 g.vimtex_view_method = "mupdf"
-vim.opt.cursorword = false
+vim.g.semantic_highlighting = false
 o.expandtab = true
 opt.breakindent = true
 opt.undofile = true
