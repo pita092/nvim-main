@@ -11,6 +11,10 @@ M.base46 = {
 }
 M.ui = {
 	hl_override = {
+		LspReferenceRead = {
+			bg = "NONE",
+			underline = false,
+		},
 		IlluminatedWordText = {
 			bg = "NONE",
 			underline = true,
