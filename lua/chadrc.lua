@@ -13,7 +13,7 @@ M.ui = {
 	telescope = {
 		enabled = false,
 	}, -- borderless / bordered
-	lsp = { signature = true },
+	lsp = { signature = false },
 	mason = { cmd = true, pkgs = {} },
 	tabufline = {
 		enabled = false,
