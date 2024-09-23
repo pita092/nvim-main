@@ -26,6 +26,10 @@ M.ui = {
 		order = nil,
 		modules = nil,
 	},
+  	cheatsheet = {
+		theme = "simple", -- simple/grid
+		excluded_groups = { "terminal (t)", "autopairs", "Nvim", "Opens" }, -- can add group name or with mode
+	},
 }
 
 return M
