@@ -10,8 +10,17 @@ M.base46 = {
 }
 M.ui = {
 	hl_override = {
-		LspReferenceWrite = {
+		IlluminatedWordText = {
 			bg = "NONE",
+			underline = true,
+		},
+		IlluminatedWordRead = {
+			bg = "NONE",
+			underline = true,
+		},
+		IlluminatedWordWrite = {
+			bg = "NONE",
+			underline = true,
 		},
 	},
 	theme = "gruvbox",
