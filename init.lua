@@ -58,9 +58,7 @@ require("lazy").setup({
 		import = "pitavim.plugins",
 	},
 }, lazy_stuff)
-vim.api.nvim_create_autocmd("CursorHold", {
-  callback = function() end,
-})
+
 require("configs")
 require("pitavim.cmds")
 require("pitavim.scripts")
