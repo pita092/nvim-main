@@ -19,15 +19,6 @@ local options = {
 
 		telescope = { style = "borderless" }, -- borderless / bordered
 
-		statusline = {
-			theme = "default", -- default/vscode/vscode_colored/minimal
-			-- default/round/block/arrow separators work only for default statusline theme
-			-- round and block will work for minimal theme only
-			separator_style = "default",
-			order = nil,
-			modules = nil,
-		},
-
 		-- lazyload it when there are 1+ buffers
 		tabufline = {
 			enabled = true,
