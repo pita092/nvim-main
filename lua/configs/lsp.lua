@@ -1,7 +1,7 @@
 local lspconfig = require("lspconfig")
 local capabilities = require("cmp_nvim_lsp").default_capabilities()
 local on_attach = function(client, bufnr)
-  client.server_capabilities.semanticTokensProvider = nil
+	client.server_capabilities.semanticTokensProvider = nil
 end
 
 lspconfig.jdtls.setup({
@@ -19,9 +19,9 @@ lspconfig.jdtls.setup({
 
 lspconfig.lua_ls.setup({
 	capabilities = capabilities,
-    on_attach = function(client)
-    client.server_capabilities.semanticTokensProvider = nil
-  end,
+	on_attach = function(client)
+		client.server_capabilities.semanticTokensProvider = nil
+	end,
 })
 lspconfig.gopls.setup({
 	filetypes = { "go", "gomod" },
