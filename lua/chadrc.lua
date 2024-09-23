@@ -1,5 +1,8 @@
 local M = {}
 M.base46 = {
+	hl_overides = {
+		LspReferenceWrite = { bg = "NONE" },
+	},
 	integrations = {
 		"blankline",
 		"cmp",
