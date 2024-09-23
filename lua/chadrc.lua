@@ -35,18 +35,22 @@ M.ui = {
 		},
 		LspReferenceRead = {
 			bg = "NONE",
+			fg = "#fabd3b",
 			underline = false,
 		},
 		IlluminatedWordText = {
 			bg = "NONE",
+			fg = "#fabd3b",
 			underline = true,
 		},
 		IlluminatedWordRead = {
 			bg = "NONE",
+			fg = "#fabd3b",
 			underline = true,
 		},
 		IlluminatedWordWrite = {
 			bg = "NONE",
+			fg = "#fabd3b",
 			underline = true,
 		},
 	},
