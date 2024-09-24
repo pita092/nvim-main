@@ -105,15 +105,15 @@ vim.keymap.set("n", "<C-q>", ":tabprevious<CR>", { noremap = true, silent = true
 
 --custom menu
 
-vim.keymap.set("n", "<leader>d", function()
-	local dashboard_opened = require("pitavim.scripts.menu").toggle_dashboard()
-	if dashboard_opened then
-		print("Dasboard opned")
-	else
-		print("Dashboard closed")
-	end
-end, { desc = "Toggle dashboard" })
-
+-- vim.keymap.set("n", "<leader>d", function()
+-- 	local dashboard_opened = require("pitavim.scripts.menu").toggle_dashboard()
+-- 	if dashboard_opened then
+-- 		print("Dasboard opned")
+-- 	else
+-- 		print("Dashboard closed")
+-- 	end
+-- end, { desc = "Toggle dashboard" })
+--
 local actions = require("telescope.actions")
 local action_state = require("telescope.actions.state")
 local pickers = require("telescope.pickers")
@@ -198,5 +198,3 @@ vim.keymap.set("n", "<leader>5", function()
 	ui.nav_file(5)
 end)
 
---formmating
-vim.keymap.set("n", "<C-g>", require("conform").format, {})
