@@ -54,7 +54,7 @@ M.ui = {
 			underline = true,
 		},
 	},
-	theme = "yoru",
+	theme = "gruvbox",
 	telescope = {
 		enabled = true,
 	}, -- borderless / bordered
