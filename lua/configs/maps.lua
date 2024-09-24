@@ -1,4 +1,4 @@
-   local map = vim.keymap.set
+local map = vim.keymap.set
 vim.keymap.set("n", "<leader>pv", ":Ex<CR>", { desc = "File Tree" })
 
 map("n", "<C-h>", "<cmd>TmuxNavigateRight <CR>", { desc = "switch window left" })
@@ -10,9 +10,6 @@ map("v", "J", ":m '>+1<CR>gv=gv")
 map("v", "K", ":m '>-2<CR>gv=gv")
 
 map("n", "<Esc>", "<cmd>noh<CR>", { desc = "General Clear highlights" })
-
-map("n", "<C-s>", "<cmd>w<CR>", { desc = "General Save file" })
-map("n", "<C-c>", "<cmd>%y+<CR>", { desc = "General Copy whole file" })
 
 --map("n", "<leader>ch", "<cmd>NvCheatsheet<CR>", { desc = "Toggle nvcheatsheet" })
 
@@ -197,4 +194,3 @@ end)
 vim.keymap.set("n", "<leader>5", function()
 	ui.nav_file(5)
 end)
-
