@@ -13,6 +13,15 @@ M.base46 = {
 	},
 }
 M.ui = {
+	TelescopePreviewBorder = {
+		fg = "#fbf1c7",
+	},
+	TelescopePromptBorder = {
+		fg = "#fbf1c7",
+	},
+	TelescopeResultsBorder = {
+		fg = "#fbf1c7",
+	},
 	hl_override = {
 		LspReferenceWrite = {
 			bg = "NONE",
@@ -47,7 +56,7 @@ M.ui = {
 	},
 	theme = "gruvbox",
 	telescope = {
-		enabled = false,
+		enabled = true,
 	}, -- borderless / bordered
 	mason = { cmd = true, pkgs = {} },
 	tabufline = {
