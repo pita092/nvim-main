@@ -60,7 +60,6 @@ require("lazy").setup({
 }, lazy_stuff)
 require("base46").load_all_highlights()
 require("configs")
-require("pitavim.cmds")
 require("pitavim.scripts")
 vim.schedule(function()
 	require("pitavim.maps")
