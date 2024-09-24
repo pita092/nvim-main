@@ -1,4 +1,4 @@
-local map = vim.keymap.set
+   local map = vim.keymap.set
 vim.keymap.set("n", "<leader>pv", ":Ex<CR>", { desc = "File Tree" })
 
 map("n", "<C-h>", "<cmd>TmuxNavigateRight <CR>", { desc = "switch window left" })

@@ -58,13 +58,6 @@ vim.api.nvim_create_user_command("Updt", "Lazy update nvim-plugins", {
 	desc = "Update neovim plugins",
 })
 
-vim.api.nvim_create_autocmd("BufWritePre", {
-	pattern = "*",
-	callback = function(args)
-		require("conform").format({ bufnr = args.buf })
-	end,
-})
-
 vim.api.nvim_create_user_command("LintInfo", function()
 	local lint = require("lint")
 	local filetype = vim.bo.filetype
