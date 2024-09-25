@@ -12,14 +12,11 @@ M.base46 = {
 		-- more
 	},
 	highlights = {
-		["@lsp.type.comment.lua"] = { fg = "green" },
+		["@comment"] = { fg = "#fbf1c7" },
 	},
 }
 --sdaad
 M.ui = {
-	["@lsp.type.comment"] = {
-		fg = "#ffffff",
-	},
 	TelescopePreviewBorder = {
 		fg = "#fbf1c7",
 	},
