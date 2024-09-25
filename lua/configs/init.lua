@@ -1,6 +1,4 @@
-vim.schedule(function()
-	require("configs.maps")
-end)
+require("configs.maps")
 require("configs.cmds")
 require("configs.lsp")
 require("configs.lint")
