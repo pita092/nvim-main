@@ -67,3 +67,7 @@ require("pitavim.scripts")
 -- end)
 -- vim.api.nvim_set_hl(0, “FloatBorder”, {link = "NoLspReferenceReadrmal"})
 
+vim.cmd([[
+ highlight @comment guifg=#928374 
+ highlight LineNr guifg=#928374 
+]])
