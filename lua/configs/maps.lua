@@ -1,13 +1,15 @@
 local map = vim.keymap.set
-vim.keymap.set("n", "<leader>pv", ":Ex<CR>", { desc = "File Tree" })
+vim.keymap.set("n", "<leader>e", ":Ex<CR>", { desc = "File Tree" })
 
 map("n", "<C-h>", "<cmd>TmuxNavigateRight <CR>", { desc = "switch window left" })
 map("n", "<C-l>", "<cmd>TmuxNavigateLeft<CR>", { desc = "switch window right" })
 map("n", "<C-j>", "<cmd>TmuxNavigateDown<CR>", { desc = "switch window down" })
 map("n", "<C-k>", "<cmd>TmuxNavigateUp <CR>", { desc = "switch window up" })
 
-map("v", "J", ":m '>+1<CR>gv=gv")
-map("v", "K", ":m '>-2<CR>gv=gv")
+map("v", "J", ":m '>+1<CR>gv=gv", { noremap = true, silent = true })
+map("v", "K", ":m '>-2<CR>gv=gv", { noremap = true, silent = true })
+
+map("n", "<C-d>", "<C-d>zz")
 
 map("n", "<Esc>", "<cmd>noh<CR>", { desc = "General Clear highlights" })
 
@@ -17,7 +19,7 @@ map("n", "<Esc>", "<cmd>noh<CR>", { desc = "General Clear highlights" })
 map("n", "<leader>ds", vim.diagnostic.setloclist, { desc = "LSP Diagnostic loclist" })
 
 -- neotree/oil
-map("n", "<leader>e", ":Neotree reveal right<CR>", { silent = true, desc = "neotree reavel" })
+-- map("n", "<leader>e", ":Neotree reveal right<CR>", { silent = true, desc = "neotree reavel" })
 -- map("n", "<C-x>", "<CMD>Oil<CR>", { silent = true, desc = "Open parent directory" })
 -- map("n", "<C-f>", ":lua require('oil').close()<CR>", { silent = true, desc = "Close oil" })
 
