@@ -97,7 +97,7 @@ end, { desc = "blankline jump to current context" })
 --tabline
 
 vim.keymap.set("n", "<C-e>", ":tabnext<CR>", { noremap = true, silent = true, desc = "next tab" })
-vim.keymap.set("n", "<C-W>", ":tabclose<CR>", { noremap = true, silent = true, desc = "next tab" })
+vim.keymap.set("n", "<C-l>", ":tabclose<CR>", { noremap = true, silent = true, desc = "next tab" })
 vim.keymap.set("n", "<C-q>", ":tabprevious<CR>", { noremap = true, silent = true, desc = "previous tab" })
 
 --custom menu
