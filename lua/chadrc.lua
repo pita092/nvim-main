@@ -14,7 +14,6 @@ M.base46 = {
 }
 --sdaad
 M.ui = {
-	["@comment"] = { fg = "#fbf1c7" },
 	hl_override = {
 		LspReferenceWrite = {
 			bg = "NONE",

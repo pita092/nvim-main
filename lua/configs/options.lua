@@ -18,9 +18,9 @@ vim.schedule(function()
 	opt.clipboard = "unnamedplus"
 end)
 
-vim.g.cursorword_enabled = false  -- for vim-cursorword
+vim.g.cursorword_enabled = false -- for vim-cursorword
 -- or
-vim.g.vim_current_word_disabled_in_buffers = 1  -- for vim-current-word
+vim.g.vim_current_word_disabled_in_buffers = 1 -- for vim-current-word
 
 g.vimtex_view_method = "mupdf"
 o.expandtab = true
