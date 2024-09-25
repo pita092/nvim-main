@@ -11,8 +11,15 @@ M.base46 = {
 		"telescope",
 		-- more
 	},
+	highlights = {
+		["@lsp.type.comment"] = { fg = "green" },
+	},
 }
+--sdaad
 M.ui = {
+	["@lsp.type.comment"] = {
+		fg = "#ffffff",
+	},
 	TelescopePreviewBorder = {
 		fg = "#fbf1c7",
 	},

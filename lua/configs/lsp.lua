@@ -1,19 +1,19 @@
 local lspconfig = require("lspconfig")
 local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
-lspconfig.jdtls.setup({
-	capabilities = capabilities,
-	filetypes = { "kotlin", "java" },
-	settings = {
-		java = {},
-	},
-	init_options = {
-		workspace = {
-			checkThirdParty = false,
-		},
-	},
-})
-
+-- lspconfig.jdtls.setup({
+-- 	capabilities = capabilities,
+-- 	filetypes = { "kotlin", "java" },
+-- 	settings = {
+-- 		java = {},
+-- 	},
+-- 	init_options = {
+-- 		workspace = {
+-- 			checkThirdParty = false,
+-- 		},
+-- 	},
+-- })
+--
 lspconfig.lua_ls.setup({
 	capabilities = capabilities,
 })
