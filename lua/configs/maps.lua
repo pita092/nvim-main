@@ -18,8 +18,8 @@ map("n", "<leader>ds", vim.diagnostic.setloclist, { desc = "LSP Diagnostic locli
 
 -- neotree/oil
 map("n", "<leader>e", ":Neotree reveal right<CR>", { silent = true, desc = "neotree reavel" })
-map("n", "<C-x>", "<CMD>Oil<CR>", { silent = true, desc = "Open parent directory" })
-map("n", "<C-f>", ":lua require('oil').close()<CR>", { silent = true, desc = "Close oil" })
+-- map("n", "<C-x>", "<CMD>Oil<CR>", { silent = true, desc = "Open parent directory" })
+-- map("n", "<C-f>", ":lua require('oil').close()<CR>", { silent = true, desc = "Close oil" })
 
 -- telescope
 local builtin = require("telescope.builtin")
