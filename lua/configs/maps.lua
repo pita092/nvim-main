@@ -42,13 +42,13 @@ vim.keymap.set("n", "<leader>sd", builtin.diagnostics, { desc = "[S]earch [D]iag
 vim.keymap.set("n", "<leader>p", builtin.git_files, { desc = "[G]it Files" })
 vim.keymap.set("n", "<leader>th", builtin.git_commits, { desc = "[G]it Commits" })
 
-vim.keymap.set("n", "<leader><leader>", function()
-	builtin.buffers({
-		winblend = 0,
-		previewer = true,
-	})
-end, { desc = "[ ] Find existing buffers" })
-
+-- vim.keymap.set("n", "<leader><leader>", function()
+-- 	builtin.buffers({
+-- 		winblend = 0,
+-- 		previewer = true,
+-- 	})
+-- end, { desc = "[ ] Find existing buffers" })
+--
 vim.keymap.set("n", "<leader>/", function()
 	builtin.current_buffer_fuzzy_find(themes.get_dropdown({
 		winblend = 0,
