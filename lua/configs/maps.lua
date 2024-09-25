@@ -136,39 +136,6 @@ function custom_actions.select_language(prompt_bufnr)
 	end
 end
 
--- Transform the custom actions
-local transform_mod = require("telescope.actions.mt").transform_mod
-custom_actions = transform_mod(custom_actions)
-
--- Create the custom picker
-local function language_picker(opts)
-	opts = opts or {}
-	pickers
-		.new(opts, {
-			prompt_title = "Select a Programming Language",
-			finder = finders.new_table({
-				results = { "Python", "JavaScript", "Rust", "Go", "Java", "C++", "Ruby" },
-				entry_maker = function(entry)
-					return {
-						value = entry,
-						display = entry,
-						ordinal = entry,
-					}
-				end,
-			}),
-			sorter = sorters.get_generic_fuzzy_sorter(),
-			attach_mappings = function(prompt_bufnr, map)
-				map("i", "<CR>", custom_actions.select_language)
-				map("n", "<CR>", custom_actions.select_language)
-				return true
-			end,
-		})
-		:find()
-end
-
--- Set up a keymap to open the picker
-vim.api.nvim_set_keymap("n", "<leader>lp", "<cmd>lua language_picker()<CR>", { noremap = true, silent = true })
-
 --harpoon
 
 local mark = require("harpoon.mark")
