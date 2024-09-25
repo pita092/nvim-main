@@ -12,7 +12,7 @@ M.base46 = {
 		-- more
 	},
 	highlights = {
-		["@lsp.type.comment"] = { fg = "green" },
+		["@lsp.type.comment.lua"] = { fg = "green" },
 	},
 }
 --sdaad
