@@ -58,6 +58,7 @@ require("lazy").setup({
 		import = "pitavim.plugins",
 	},
 }, lazy_stuff)
+
 require("base46").load_all_highlights()
 require("configs")
 require("pitavim.scripts")
@@ -65,3 +66,7 @@ require("pitavim.scripts")
 -- 	require("pitavim.maps")
 -- end)
 -- vim.api.nvim_set_hl(0, “FloatBorder”, {link = "NoLspReferenceReadrmal"})
+
+vim.cmd([[
+highlight @comment guifg=#928374 gui=italic
+]])

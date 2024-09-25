@@ -15,16 +15,6 @@ M.base46 = {
 --sdaad
 M.ui = {
 	["@comment"] = { fg = "#fbf1c7" },
-
-	TelescopePreviewBorder = {
-		fg = "#fbf1c7",
-	},
-	TelescopePromptBorder = {
-		fg = "#fbf1c7",
-	},
-	TelescopeResultsBorder = {
-		fg = "#fbf1c7",
-	},
 	hl_override = {
 		LspReferenceWrite = {
 			bg = "NONE",
