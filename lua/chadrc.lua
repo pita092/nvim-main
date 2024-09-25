@@ -11,12 +11,11 @@ M.base46 = {
 		"telescope",
 		-- more
 	},
-	highlights = {
-		["@comment"] = { fg = "#fbf1c7" },
-	},
 }
 --sdaad
 M.ui = {
+	["@comment"] = { fg = "#fbf1c7" },
+
 	TelescopePreviewBorder = {
 		fg = "#fbf1c7",
 	},

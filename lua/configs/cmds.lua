@@ -1,5 +1,4 @@
 local autocmd = vim.api.nvim_create_autocmd
-
 autocmd({ "UIEnter", "ColorScheme" }, {
 	callback = function()
 		local normal = vim.api.nvim_get_hl(0, { name = "Normal" })
