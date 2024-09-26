@@ -1,5 +1,5 @@
 local map = vim.keymap.set
-vim.keymap.set("n", "<leader>e", ":Ex<CR>", { desc = "File Tree" })
+vim.keymap.set("n", "<leader>pv", ":Ex<CR>", { desc = "File Tree" })
 
 map("n", "<C-h>", "<cmd>TmuxNavigateRight <CR>", { desc = "switch window left" })
 map("n", "<C-l>", "<cmd>TmuxNavigateLeft<CR>", { desc = "switch window right" })
@@ -35,10 +35,10 @@ vim.keymap.set("n", "<leader>H", builtin.help_tags, { desc = "[S]earch [H]elp" }
 vim.keymap.set("n", "<leader>K", "<CMD>Telescope themes<CR>", { desc = "[S]earch [K]eymaps" })
 vim.keymap.set("n", "<leader>g", builtin.find_files, { desc = "[S]earch [F]iles" })
 vim.keymap.set("n", "<leader>o", function()
-	builtin.live_grep({
-		winblend = 0,
-		previewer = true,
-	})
+  builtin.live_grep({
+    winblend = 0,
+    previewer = true,
+  })
 end, { desc = "[O] Live grep" })
 vim.keymap.set("n", "<leader>sd", builtin.diagnostics, { desc = "[S]earch [D]iagnostics" })
 vim.keymap.set("n", "<leader>p", builtin.git_files, { desc = "[G]it Files" })
@@ -52,14 +52,14 @@ vim.keymap.set("n", "<leader>th", builtin.git_commits, { desc = "[G]it Commits" 
 -- end, { desc = "[ ] Find existing buffers" })
 --
 vim.keymap.set("n", "<leader>/", function()
-	builtin.current_buffer_fuzzy_find(themes.get_dropdown({
-		winblend = 0,
-		previewer = false,
-	}))
+  builtin.current_buffer_fuzzy_find(themes.get_dropdown({
+    winblend = 0,
+    previewer = false,
+  }))
 end, { desc = "[/] Fuzzily search in current buffer" })
 
 vim.keymap.set("n", "<leader>sn", function()
-	builtin.find_files({ cwd = vim.fn.stdpath("config") })
+  builtin.find_files({ cwd = vim.fn.stdpath("config") })
 end, { desc = "[S]earch [N]eovim files" })
 
 -- terminal
@@ -67,7 +67,7 @@ map("t", "<C-x>", "<C-\\><C-N>", { desc = "terminal escape terminal mode" })
 
 -- new terminals
 map("n", "<leader>v", function()
-	require("nvterm.terminal").new("horizontal")
+  require("nvterm.terminal").new("horizontal")
 end, { desc = "terminal new vertical window" })
 
 vim.api.nvim_set_keymap("n", "<C-q>", ":bdelete!<CR>", { noremap = true, silent = true })
@@ -77,23 +77,23 @@ vim.api.nvim_set_keymap("t", "<C-q>", "<C-\\><C-n>:bdelete!<CR>", { noremap = tr
 map("n", "<leader>wK", "<cmd>WhichKey <CR>", { desc = "whichkey all keymaps" })
 
 map("n", "<leader>wk", function()
-	vim.cmd("WhichKey " .. vim.fn.input("WhichKey: "))
+  vim.cmd("WhichKey " .. vim.fn.input("WhichKey: "))
 end, { desc = "whichkey query lookup" })
 
 -- blankline
 map("n", "<leader>cc", function()
-	local config = { scope = {} }
-	config.scope.exclude = { language = {}, node_type = {} }
-	config.scope.include = { node_type = {} }
-	local node = require("ibl.scope").get(vim.api.nvim_get_current_buf(), config)
+  local config = { scope = {} }
+  config.scope.exclude = { language = {}, node_type = {} }
+  config.scope.include = { node_type = {} }
+  local node = require("ibl.scope").get(vim.api.nvim_get_current_buf(), config)
 
-	if node then
-		local start_row, _, end_row, _ = node:range()
-		if start_row ~= end_row then
-			vim.api.nvim_win_set_cursor(vim.api.nvim_get_current_win(), { start_row + 1, 0 })
-			vim.api.nvim_feedkeys("_", "n", true)
-		end
-	end
+  if node then
+    local start_row, _, end_row, _ = node:range()
+    if start_row ~= end_row then
+      vim.api.nvim_win_set_cursor(vim.api.nvim_get_current_win(), { start_row + 1, 0 })
+      vim.api.nvim_feedkeys("_", "n", true)
+    end
+  end
 end, { desc = "blankline jump to current context" })
 
 --tabline
@@ -124,18 +124,18 @@ local conf = require("telescope.config").values
 local custom_actions = {}
 
 function custom_actions.select_language(prompt_bufnr)
-	local selection = action_state.get_selected_entry()
-	actions.close(prompt_bufnr)
-	print("You selected: " .. selection.value)
-	-- Here you can add more functionality, like opening a file or running a command
-	-- based on the selected language
-	if selection.value == "Python" then
-		vim.cmd("edit ~/.config/nvim/ftplugin/python.lua")
-	elseif selection.value == "JavaScript" then
-		vim.cmd("edit ~/.config/nvim/ftplugin/javascript.lua")
-	elseif selection.value == "Rust" then
-		vim.cmd("!cargo new my_rust_project")
-	end
+  local selection = action_state.get_selected_entry()
+  actions.close(prompt_bufnr)
+  print("You selected: " .. selection.value)
+  -- Here you can add more functionality, like opening a file or running a command
+  -- based on the selected language
+  if selection.value == "Python" then
+    vim.cmd("edit ~/.config/nvim/ftplugin/python.lua")
+  elseif selection.value == "JavaScript" then
+    vim.cmd("edit ~/.config/nvim/ftplugin/javascript.lua")
+  elseif selection.value == "Rust" then
+    vim.cmd("!cargo new my_rust_project")
+  end
 end
 
 --harpoon
@@ -149,17 +149,17 @@ vim.keymap.set("n", "<leader>r", ui.nav_next)
 vim.keymap.set("n", "<leader>q", ui.nav_next)
 
 vim.keymap.set("n", "<leader>1", function()
-	ui.nav_file(1)
+  ui.nav_file(1)
 end)
 vim.keymap.set("n", "<leader>2", function()
-	ui.nav_file(2)
+  ui.nav_file(2)
 end)
 vim.keymap.set("n", "<leader>3", function()
-	ui.nav_file(3)
+  ui.nav_file(3)
 end)
 vim.keymap.set("n", "<leader>4", function()
-	ui.nav_file(4)
+  ui.nav_file(4)
 end)
 vim.keymap.set("n", "<leader>5", function()
-	ui.nav_file(5)
+  ui.nav_file(5)
 end)
