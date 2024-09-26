@@ -49,6 +49,7 @@ M.ui = {
 	theme = "gruvbox",
 	telescope = {
 		enabled = true,
+		style = "borderless",
 	}, -- borderless / bordered
 	mason = { cmd = true, pkgs = {} },
 	tabufline = {
