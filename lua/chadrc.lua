@@ -53,6 +53,10 @@ M.ui = {
 		},
 	},
 	telescope = {
+<<<<<<< HEAD
+=======
+		enabled = true,
+>>>>>>> f4e613a83a3b97154e7b048f5c0efa8f035223e1
 		style = "borderless",
 	}, -- borderless / bordered
 	mason = { cmd = true, pkgs = {} },
