@@ -60,15 +60,12 @@ vim.keymap.set("n", "<leader>/", function()
   }))
 end, { desc = "[/] Fuzzily search in current buffer" })
 
-<<<<<<< HEAD
 -- vim.keymap.set("n", "<leader>sn", function()
 -- 	builtin.find_files({ cwd = vim.fn.stdpath("config") })
 -- end, { desc = "[S]earch [N]eovim files" })
-=======
 vim.keymap.set("n", "<leader>sn", function()
   builtin.find_files({ cwd = vim.fn.stdpath("config") })
 end, { desc = "[S]earch [N]eovim files" })
->>>>>>> f4e613a83a3b97154e7b048f5c0efa8f035223e1
 
 -- terminal
 map("t", "<C-x>", "<C-\\><C-N>", { desc = "terminal escape terminal mode" })
@@ -81,8 +78,6 @@ end, { desc = "terminal new vertical window" })
 vim.api.nvim_set_keymap("n", "<C-q>", ":bdelete!<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("t", "<C-q>", "<C-\\><C-n>:bdelete!<CR>", { noremap = true, silent = true })
 
-<<<<<<< HEAD
-=======
 -- whichkey
 map("n", "<leader>wK", "<cmd>WhichKey <CR>", { desc = "whichkey all keymaps" })
 
@@ -90,7 +85,6 @@ map("n", "<leader>wk", function()
   vim.cmd("WhichKey " .. vim.fn.input("WhichKey: "))
 end, { desc = "whichkey query lookup" })
 
->>>>>>> f4e613a83a3b97154e7b048f5c0efa8f035223e1
 -- blankline
 map("n", "<leader>cc", function()
   local config = { scope = {} }
@@ -124,8 +118,6 @@ end, { desc = "blankline jump to current context" })
 -- 	end
 -- end, { desc = "Toggle dashboard" })
 --
-<<<<<<< HEAD
-=======
 local actions = require("telescope.actions")
 local action_state = require("telescope.actions.state")
 local pickers = require("telescope.pickers")
@@ -150,7 +142,6 @@ function custom_actions.select_language(prompt_bufnr)
     vim.cmd("!cargo new my_rust_project")
   end
 end
->>>>>>> f4e613a83a3b97154e7b048f5c0efa8f035223e1
 
 --harpoon
 
