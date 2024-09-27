@@ -18,6 +18,7 @@ return {
 				"getscript",
 				"getscriptPlugin",
 				"gzip",
+				{ "netrw", "netrwPlugin", "netrwSettings", cmd = "Ex" },
 				"logipat",
 				"matchit",
 				"tar",

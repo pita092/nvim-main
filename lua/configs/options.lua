@@ -36,7 +36,7 @@ opt.splitright = true
 opt.splitbelow = true
 --opt.listchars = {tab = "» " , trail = "·", nbsp = "␣" }
 o.termguicolors = true
-vim.o.showtabline = 2
+-- vim.o.showtabline = 2
 o.updatetime = 50
 opt.inccommand = "split"
 o.cursorline = false

@@ -4,7 +4,6 @@ M.base46 = {
 		"blankline",
 		"cmp",
 		"git",
-		"telescope",
 		-- more
 	},
 }
@@ -16,8 +15,12 @@ M.ui = {
 		order = nil,
 		modules = nil,
 	},
-	theme = "gruvbox_light",
+	theme = "gruvbox",
 	hl_override = {
+		["@comment"] = { fg = "#d5c4a1" },
+
+		LineNr = { fg = "#d5c4a1" },
+
 		LspReferenceWrite = {
 			bg = "NONE",
 			fg = "#fabd3b",
@@ -50,7 +53,7 @@ M.ui = {
 		},
 	},
 	telescope = {
-		enabled = true,
+		style = "borderless",
 	}, -- borderless / bordered
 	mason = { cmd = true, pkgs = {} },
 	tabufline = {
