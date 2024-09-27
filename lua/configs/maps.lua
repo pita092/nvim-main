@@ -1,6 +1,8 @@
 local map = vim.keymap.set
 vim.keymap.set("n", "<leader>ex", ":Ex<CR>", { desc = "File Tree" })
 
+vim.keymap.set("n", "<leader>m", require("treesj").toggle)
+
 map("n", "<C-h>", "<cmd>TmuxNavigateRight <CR>", { desc = "switch window left" })
 map("n", "<C-l>", "<cmd>TmuxNavigateLeft<CR>", { desc = "switch window right" })
 map("n", "<C-j>", "<cmd>TmuxNavigateDown<CR>", { desc = "switch window down" })
