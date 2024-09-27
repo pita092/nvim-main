@@ -17,6 +17,15 @@ M.ui = {
 	},
 	theme = "gruvbox",
 	hl_override = {
+		TelescopeBorder = {
+			fg = "#000000",
+		},
+		TelescopePromptBorder = {
+			fg = "#000000",
+		},
+		TelescopePreviewBorder = {
+			fg = "#000000",
+		},
 		["@comment"] = { fg = "#d5c4a1" },
 
 		LineNr = { fg = "#d5c4a1" },
@@ -54,7 +63,7 @@ M.ui = {
 	},
 	telescope = {
 		enabled = true,
-		style = "borderless",
+		style = "bordered",
 	}, -- borderless / bordered
 	mason = { cmd = true, pkgs = {} },
 	tabufline = {
