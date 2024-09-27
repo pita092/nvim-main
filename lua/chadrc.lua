@@ -1,7 +1,3 @@
-local function get_hl_fg(name)
-	local hl = vim.api.nvim_get_hl(0, { name = name })
-	return hl.fg
-end
 local M = {}
 M.base46 = {
 	integrations = {
@@ -14,6 +10,13 @@ M.base46 = {
 }
 --sdaad
 M.ui = {
+	statusline = {
+		theme = "vscode",
+		separator_style = "default",
+		order = nil,
+		modules = nil,
+	},
+	theme = "gruvbox_light",
 	hl_override = {
 		LspReferenceWrite = {
 			bg = "NONE",
@@ -46,21 +49,12 @@ M.ui = {
 			underline = true,
 		},
 	},
-	theme = "gruvbox",
 	telescope = {
 		enabled = true,
 	}, -- borderless / bordered
 	mason = { cmd = true, pkgs = {} },
 	tabufline = {
 		enabled = false,
-	},
-	statusline = {
-		theme = "vscode", -- default/vscode/vscode_colored/minimal
-		-- default/round/block/arrow separators work only for default statusline theme
-		-- round and block will work for minimal theme only
-		separator_style = "default",
-		order = nil,
-		modules = nil,
 	},
 }
 
