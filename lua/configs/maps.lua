@@ -1,7 +1,7 @@
 local map = vim.keymap.set
 vim.keymap.set("n", "<leader>ex", ":Ex<CR>", { desc = "File Tree" })
 
-vim.keymap.set("n", "<leader>m", require("treesj").toggle)
+map("n", "<leader>m", require("treesj").toggle)
 
 map("n", "<C-h>", "<cmd>TmuxNavigateRight <CR>", { desc = "switch window left" })
 map("n", "<C-l>", "<cmd>TmuxNavigateLeft<CR>", { desc = "switch window right" })
@@ -28,6 +28,7 @@ map("n", "<leader>ds", vim.diagnostic.setloclist, { desc = "LSP Diagnostic locli
 -- telescope
 local builtin = require("telescope.builtin")
 local themes = require("telescope.themes")
+
 vim.keymap.set("n", "<leader>cd", function()
 	require("telescope").extensions.zoxide.list({
 		winblend = 0,
@@ -53,7 +54,7 @@ vim.keymap.set("n", "<leader>o", function()
 	})
 end, { desc = "[O] Live grep" })
 vim.keymap.set("n", "<leader>xx", builtin.diagnostics, { desc = "[S]earch [D]iagnostics" })
-vim.keymap.set("n", "<leader>gf", builtin.git_files, { desc = "[G]it Files" })
+vim.keymap.set("n", "<leader>p", builtin.git_files, { desc = "[G]it Files" })
 vim.keymap.set("n", "<leader>gc", builtin.git_commits, { desc = "[G]it Commits" })
 
 vim.keymap.set("n", "<leader>bb", function()
@@ -74,8 +75,8 @@ end, { desc = "[/] Fuzzily search in current buffer" })
 -- 	builtin.find_files({ cwd = vim.fn.stdpath("config") })
 -- end, { desc = "[S]earch [N]eovim files" })
 vim.keymap.set("n", "<leader>sn", function()
-	builtin.find_files({ cwd = vim.fn.stdpath("config") })
-end, { desc = "[S]earch [N]eovim files" })
+	builtin.find_files()
+end, { desc = "[S]earch [N]eovim" })
 
 -- terminal
 map("t", "<C-x>", "<C-\\><C-N>", { desc = "terminal escape terminal mode" })

@@ -14,6 +14,7 @@ opt.relativenumber = true
 opt.mouse = "a"
 opt.showmode = false
 
+--idk
 vim.schedule(function()
 	opt.clipboard = "unnamedplus"
 end)
@@ -49,6 +50,12 @@ local is_windows = vim.fn.has("win32") ~= 0
 local sep = is_windows and "\\" or "/"
 local delim = is_windows and ";" or ":"
 vim.env.PATH = table.concat({ vim.fn.stdpath("data"), "mason", "bin" }, sep) .. delim .. vim.env.PATH
+
+--netrw
+
+g.netrw_browse_split = 0
+g.netrw_banner = 0
+g.netrw_winsize = 25
 
 if g.neovide then
 	g.neovide_padding_top = 0
