@@ -54,8 +54,8 @@ vim.defer_fn(function()
 end, 100)
 ---custom commands
 
-vim.api.nvim_create_user_command("Updt", "Lazy update nvim-plugins", {
-	desc = "Update neovim plugins",
+vim.api.nvim_create_user_command("Sync", "Lazy sync", {
+	desc = "Lazy [S]ync",
 })
 
 vim.api.nvim_create_user_command("LintInfo", function()

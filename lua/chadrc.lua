@@ -15,16 +15,16 @@ M.ui = {
 		order = nil,
 		modules = nil,
 	},
-	theme = "tokyodark",
+	theme = "gruvbox",
 	hl_override = {
 		TelescopeBorder = {
-			fg = "#000000",
+			fg = "#222222",
 		},
 		TelescopePromptBorder = {
-			fg = "#000000",
+			fg = "#222222",
 		},
 		TelescopePreviewBorder = {
-			fg = "#000000",
+			fg = "#ffffff",
 		},
 		["@comment"] = { fg = "#d5c4a1" },
 
