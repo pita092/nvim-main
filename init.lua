@@ -71,5 +71,7 @@ require("pitavim.scripts")
 
 vim.cmd([[
  highlight @comment guifg=#d5c4a1
- highlight LineNr guifg=  #d5c4a1
+ highlight LineNr guifg=#d5c4a1
+highlight DiagnosticUnnecessary guifg=#a89984,
+
 ]])
