@@ -15,7 +15,7 @@ M.ui = {
 		order = nil,
 		modules = nil,
 	},
-	theme = "gruvbox",
+	theme = "tokyodark",
 	hl_override = {
 		TelescopeBorder = {
 			fg = "#000000",
@@ -51,7 +51,7 @@ M.ui = {
 			underline = true,
 		},
 		IlluminatedWordRead = {
-			bg = "NONE",
+			b = "NONE",
 			fg = "#fabd3b",
 			underline = true,
 		},
