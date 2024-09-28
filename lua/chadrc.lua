@@ -33,17 +33,17 @@ M.ui = {
 		LspReferenceWrite = {
 			bg = "NONE",
 			fg = "#fabd3b",
-			underline = false,
+			underline = true,
 		},
 		LspReferenceText = {
 			bg = "NONE",
 			fg = "#fabd3b",
-			underline = false,
+			underline = true,
 		},
 		LspReferenceRead = {
 			bg = "NONE",
 			fg = "#fabd3b",
-			underline = false,
+			underline = true,
 		},
 		IlluminatedWordText = {
 			bg = "NONE",
