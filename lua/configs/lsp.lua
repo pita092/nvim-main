@@ -16,6 +16,9 @@ local capabilities = require("cmp_nvim_lsp").default_capabilities()
 --
 
 lspconfig.asm_lsp.setup({
+	root_dir = function(fname)
+		return vim.loop.cwd()
+	end,
 	capabilities = capabilities,
 })
 
