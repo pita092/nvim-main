@@ -15,9 +15,14 @@ local capabilities = require("cmp_nvim_lsp").default_capabilities()
 -- })
 --
 
-lspconfig.csharp_ls.setup({
+lspconfig.omnisharp.setup({
 	capabilities = capabilities,
+	filetypes = { "cs", "vb" },
+	["textDocument/definition"] = function(...)
+		return require("omnisharp_extended").handler(...)
+	end,
 })
+
 lspconfig.lua_ls.setup({
 	capabilities = capabilities,
 })
