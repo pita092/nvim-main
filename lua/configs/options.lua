@@ -23,6 +23,8 @@ vim.g.cursorword_enabled = false -- for vim-cursorword
 -- or
 vim.g.vim_current_word_disabled_in_buffers = 1 -- for vim-current-word
 
+vim.g.codeium_enabled = true
+
 g.vimtex_view_method = "mupdf"
 o.expandtab = true
 opt.breakindent = true
