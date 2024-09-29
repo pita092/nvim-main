@@ -6,7 +6,6 @@ require("conform").setup({
 		go = { "gofumpt", "goimports_reviser", "golines" },
 		java = { "clang_format" },
 		cs = { "clang-format" },
-		asm = { "asmfmt" },
 	},
 	--  format_on_save = {
 	--   timeout_ms = 500,
