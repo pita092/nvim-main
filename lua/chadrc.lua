@@ -17,18 +17,37 @@ M.ui = {
 	},
 	theme = "gruvbox",
 	hl_override = {
+		TelescopeNormal = {
+			bg = "#292929",
+			fg = "white",
+		},
 		TelescopeBorder = {
-			fg = "#222222",
+			fg = "white",
+			bg = "white",
 		},
 		TelescopePromptBorder = {
-			fg = "#222222",
+			fg = "white",
+			bg = "white",
+		},
+		TelescopePromptNormal = {
+			fg = "#292929",
+			bold = true,
+			bg = "white",
+		},
+		TelescopePromptTitle = {
+			fg = "white",
+			bg = "white",
+		},
+		TelescopePromptPrefix = {
+			fg = "white",
+			bg = "white",
 		},
 		TelescopePreviewBorder = {
 			fg = "#ffffff",
 		},
-		["@comment"] = { fg = "#d5c4a1" },
+		["@comment"] = { fg = "white", bold = true },
 
-		LineNr = { fg = "#d5c4a1" },
+		LineNr = { fg = "white" },
 
 		LspReferenceWrite = {
 			bg = "NONE",

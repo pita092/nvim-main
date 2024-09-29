@@ -1,4 +1,4 @@
---[[⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⠤⠶⠶⠛⠛⠛⠛⠛⠛⠛⠶⠦⢄⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀local
+--[[⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⠤⠶⠶⠛⠛⠛⠛⠛⠛⠛⠶⠦⢄⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⡤⠖⠛⠉⠁⠀⠀⠀⣠⣤⣶⣾⣶⣤⣄⠀⠀⠀⠈⠹⣷⣦⣤⣤⣤⣤⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⠞⠉⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⡿⠟⠛⠛⠿⠆⠀⠀⠀⠀⠨⢻⠿⠿⠿⣿⣿⣷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡴⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⠿⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢿⣿⣿⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
@@ -69,9 +69,9 @@ require("pitavim.scripts")
 -- end)
 -- vim.api.nvim_set_hl(0, “FloatBorder”, {link = "NoLspReferenceReadrmal"})
 
-vim.cmd([[
- highlight @comment guifg=#d5c4a1
- highlight LineNr guifg=#d5c4a1
-highlight DiagnosticUnnecessary guifg=#a89984,
-
-]])
+-- vim.cmd([[
+--  highlight @comment guifg=#d5c4a1
+--  highlight LineNr guifg=#d5c4a1
+-- highlight DiagnosticUnnecessary guifg=#a89984,
+--
+-- ]])
