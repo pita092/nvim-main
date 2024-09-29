@@ -17,6 +17,9 @@ local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
 lspconfig.csharp_ls.setup({
 	capabilities = capabilities,
+	root_dir = function(fname)
+		return lspconfig.util.root_pattern("*.sln", "*.csproj")(fname) or vim.fn.getcwd()
+	end,
 })
 lspconfig.lua_ls.setup({
 	capabilities = capabilities,
