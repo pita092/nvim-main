@@ -5,6 +5,7 @@ require("conform").setup({
 		cpp = { "clang_format" },
 		go = { "gofumpt", "goimports_reviser", "golines" },
 		java = { "clang_format" },
+		cs = { "clang-format" },
 	},
 	--  format_on_save = {
 	--   timeout_ms = 500,
