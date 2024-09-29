@@ -1,6 +1,22 @@
 local map = vim.keymap.set
 vim.keymap.set("n", "<leader>ex", ":Ex<CR>", { desc = "File Tree" })
 
+vim.keymap.set("i", "<C-g>", function()
+	return vim.fn["codeium#Accept"]()
+end, { expr = true, silent = true })
+
+vim.keymap.set("i", "<c-;>", function()
+	return vim.fn["codeium#CycleCompletions"](1)
+end, { expr = true, silent = true })
+
+vim.keymap.set("i", "<c-,>", function()
+	return vim.fn["codeium#CycleCompletions"](-1)
+end, { expr = true, silent = true })
+
+vim.keymap.set("i", "<c-x>", function()
+	return vim.fn["codeium#Clear"]()
+end, { expr = true, silent = true })
+
 map("n", "<leader>m", require("treesj").toggle)
 
 map("n", "<C-h>", "<cmd>TmuxNavigateRight <CR>", { desc = "switch window left" })
