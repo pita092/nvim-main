@@ -78,13 +78,12 @@ vim.keymap.set("n", "<leader>bb", function()
 		winblend = 0,
 		previewer = true,
 	})
-end, { desc = "[ ] Find existing buffers" })
+end, { desc = "[b] Find existing buffers" })
 
 vim.keymap.set("n", "<leader>/", function()
-	builtin.current_buffer_fuzzy_find(themes.get_dropdown({
-		winblend = 0,
+	builtin.current_buffer_fuzzy_find({
 		previewer = false,
-	}))
+	})
 end, { desc = "[/] Fuzzily search in current buffer" })
 
 -- vim.keymap.set("n", "<leader>sn", function()
@@ -99,7 +98,7 @@ map("t", "<C-x>", "<C-\\><C-N>", { desc = "terminal escape terminal mode" })
 
 -- new terminals
 map("n", "<leader>v", function()
-	require("nvterm.terminal").new("horizontal")
+	require("nvterm.terminal").new("float")
 end, { desc = "terminal new vertical window" })
 
 vim.api.nvim_set_keymap("n", "<C-q>", ":bdelete!<CR>", { noremap = true, silent = true })
