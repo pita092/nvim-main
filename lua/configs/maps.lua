@@ -98,7 +98,7 @@ map("t", "<C-x>", "<C-\\><C-N>", { desc = "terminal escape terminal mode" })
 
 -- new terminals
 map("n", "<leader>v", function()
-	require("nvterm.terminal").new("float")
+	require("nvterm.terminal").toggle("float")
 end, { desc = "terminal new vertical window" })
 
 vim.api.nvim_set_keymap("n", "<C-q>", ":bdelete!<CR>", { noremap = true, silent = true })
