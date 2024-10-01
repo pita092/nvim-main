@@ -96,21 +96,6 @@ end, { desc = "[S]earch [N]eovim" })
 -- terminal
 map("t", "<C-x>", "<C-\\><C-N>", { desc = "terminal escape terminal mode" })
 
--- new terminals
-map("n", "<leader>v", function()
-	require("nvterm.terminal").toggle("float")
-end, { desc = "terminal new vertical window" })
-
-vim.api.nvim_set_keymap("n", "<C-q>", ":bdelete!<CR>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("t", "<C-q>", "<C-\\><C-n>:bdelete!<CR>", { noremap = true, silent = true })
-
--- whichkey
-map("n", "<leader>wK", "<cmd>WhichKey <CR>", { desc = "whichkey all keymaps" })
-
-map("n", "<leader>wk", function()
-	vim.cmd("WhichKey " .. vim.fn.input("WhichKey: "))
-end, { desc = "whichkey query lookup" })
-
 -- blankline
 map("n", "<leader>cc", function()
 	local config = { scope = {} }
@@ -145,7 +130,7 @@ end, { desc = "blankline jump to current context" })
 -- end, { desc = "Toggle dashboard" })
 --
 
---harpoon
+-- harpoon
 local harpoon = require("harpoon")
 
 -- REQUIRED

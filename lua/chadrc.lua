@@ -18,7 +18,7 @@ M.ui = {
 		order = nil,
 		modules = nil,
 	},
-	theme = "gruvbox",
+	theme = "github",
 	hl_override = {
 		TelescopeNormal = {
 			bg = "#292929",
